@@ -12,3 +12,9 @@ resource storage 'Microsoft.Storage/storageAccounts@2021-04-01' = {
     accessTier: 'Cool'
   }
 }
+ resource publicIp 'Microsoft.Network/publicIPAddresses@2021-02-01' = {
+  name: 'myPip'
+  sku: {
+    name: 'Standard'
+  }
+}
